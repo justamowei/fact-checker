@@ -1,0 +1,20 @@
+# LlamaIndex core packages
+llama-index==0.11.36
+llama-index-core==0.11.36
+
+# LlamaIndex specific integrations
+llama-index-embeddings-google-genai==0.3.1
+llama-index-vector-stores-chroma==0.3.1
+llama-index-llms-gemini==0.5.2
+llama-index-retrievers-auto-merging==0.2.1
+
+# Core dependencies
+chromadb==0.5.23
+google-genai==0.8.2
+google-generativeai==0.8.3
+numpy==1.24.3
+pandas==2.0.3
+python-dotenv==1.0.0
+
+# Optional dependencies for enhanced functionality
+tqdm==4.66.1
