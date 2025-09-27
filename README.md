@@ -19,8 +19,20 @@
 3. 執行爬蟲（生成 JSON）
 4. 建立向量索引並啟動 RAG 互動
 
+## 實例
+### 範例一
+![alt text](範例一.png)
+### 範例二
+![alt text](範例二.png)
+### 範例三
+![alt text](範例三.png)
+### 範例四（不存在於資料庫的訊息）
+![alt text](範例四.png)
 
 ## TODO
 - 調整 embedding ：目前向量化時很容易會觸發 Google GenAI 回傳 503（Service Unavailable），導致後面的資料都無法向量畫到，目前看起來是沒有超過官方文檔的速率，需再找找看原因。
 - 新增資料來源：考慮把 MyGoPen、Cofacts 等社群/事實查核來源納入 RAG 的資料庫中。
 - RAG 邏輯優化：可進一步嘗試不同的策略（例如不同的 chunking、retriever 策略等）。
+
+## 問題
+- 如果問的問題不夠具體，可能會發生資料庫中太多類似關鍵字的事件而誤判
